@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html land="pl">
+<body>
+	<meta charset="utf-8">
+	<style>
+	body{ background: grey;}
+	.okno{background: white; height:30px;}
+	.okW {
+	background:red; 
+	border: 1px solid #ddd; 
+	font-size: 1rem; color: #222; 
+	width: 1000px; 
+	height:30px;}
+	</style>
+	
+	
+
+	<input type="text" id="pole" oninput="podstawa()"/>
+	<input type="text" id="pole2" oninput="podstawa()"/>
+	<p id="proba"></p>
+	Wynik mnożenia:<table class="okW" type="text" id="wynik"></table>
+
+	
+
+	<script>
+		
+function podstawa(){
+	let liczba1 = document.getElementById("pole").value;
+	let liczba2 = document.getElementById("pole2").value;
+	let obl = parseFloat(liczba1) * parseFloat(liczba2)
+	document.getElementById("wynik").innerHTML = obl;
+	
+}
+	
+	</script>
+
+</body>
+
+
+
+</html>
